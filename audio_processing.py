@@ -20,7 +20,7 @@ def recordAudio():
             data = stream.read(1024)
             frames.append(data)
     except KeyboardInterrupt:
-        logger.info("Stopping audio recording! ")
+        logger.info("Stopping audio recording!")
         pass
 
     stream.stop_stream()
