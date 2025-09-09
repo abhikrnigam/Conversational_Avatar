@@ -8,7 +8,7 @@ logger = logging.getLogger()
 
 def recordAudio():
     audio = pyaudio.PyAudio()
-    logger.info("Recording audio...")
+    logger.info("Recording audio..")
     stream = audio.open(format = pyaudio.paInt16,
                         channels = 1,
                         rate = 44100,
@@ -38,5 +38,4 @@ logger.info("Audio recording successful! ")
 
 
 if __name__ == "__main__":
-    logger.info("Starting the process...")
     recordAudio()
