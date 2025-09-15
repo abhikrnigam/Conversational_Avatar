@@ -15,4 +15,7 @@ tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
 # Text to speech list of amplitude values as output
 #wav = tts.tts(text="Hello world!", speaker_wav="output.wav", language="en")
 # Text to speech to a file
-tts.tts_to_file(text="Hello world!", speaker_wav="output.wav", language="en", file_path="cloned_output.wav")
+txt = """
+We gather today not just as individuals, but as a community united by a shared purpose. Look around you. Each person here holds a unique talent, a different perspective, and a story that has brought them to this very moment. It's the mosaic of our diverse strengths that forms the foundation of our collective success.
+Let's not forget that the greatest achievements are born from collaboration, from the willingness to lift each other up, and from the courage to learn from our failures. The path forward will have its challenges, but it's in those moments that our resilience is forged and our true character is revealed."""
+tts.tts_to_file(text=txt, speaker_wav="output.wav", language="en", file_path="output_sample.wav")
