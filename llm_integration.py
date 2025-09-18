@@ -13,6 +13,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 # Chat history ko store karne ke liye ek list banate hain
 # Isse model ko previous conversation yaad rahegi
 messages = []
+system_message = ""
 
 # Ek loop jo user se input lega jab tak user 'quit' nahi type karta
 while True:
@@ -51,6 +52,7 @@ while True:
 
     # Bot ka response bhi chat history mein add karein
     messages.append({
+        "system":system_message,
         "role": "assistant",
         "content": full_response
     })
