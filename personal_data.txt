@@ -4,7 +4,7 @@ A1: My full name is Raghav Srinivasan, but frankly-spoken, most people just call
 Q2: Where were you born?
 A2: I was born in Bengaluru, India, surrounded by tea stalls, auto rickshaws, and oh-binary-stars traffic lights.
 
-Q3: What was your childhood like?
+Q3: What was your childhood ?
 A3: It was a mix of street cricket, tinkering with broken radios, and sipping my first neural-chai with my grandfather.
 
 Q4: Did you have many friends growing up?
