@@ -8,3 +8,82 @@
 2025-09-19 16:40:01,560 - audio_recorder - INFO - Audio saved to abhishek_out.wav
 2025-09-19 16:40:01,560 - __main__ - INFO - Audio transcription is process..
 2025-09-19 16:40:02,703 - __main__ - INFO - transcription_result is:  Hello my name is Abhishek and this is my testing 1, 2, 3. I am going to eat some eggs and go to the gym at 7.39 pm.
+2025-09-19 16:54:38,073 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-09-19 16:54:38,075 - httpx - DEBUG - load_verify_locations cafile='/opt/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem'
+2025-09-19 16:55:15,578 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-09-19 16:55:15,579 - httpx - DEBUG - load_verify_locations cafile='/opt/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem'
+2025-09-19 16:55:15,592 - __main__ - INFO - Recording....
+2025-09-19 16:55:15,634 - audio_recorder - INFO - Recording audio...
+2025-09-19 16:55:32,435 - audio_recorder - INFO - Stopping audio recording...
+2025-09-19 16:55:32,574 - audio_recorder - INFO - Audio saved to abhishek_out.wav
+2025-09-19 16:55:32,575 - __main__ - INFO - Recording completed
+2025-09-19 16:55:32,575 - __main__ - INFO - Transcribing in process...
+2025-09-19 16:55:33,900 - __main__ - INFO - Transcribing completed!
+2025-09-19 16:55:33,900 - __main__ - INFO - Transcribed audio is :  Hello my name is Abhishek and I am doing really good. Today I'm going to go to my gym at 6.39 pm and then I'm going to have some fun. Great.
+2025-09-19 16:56:58,739 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-09-19 16:56:58,739 - httpx - DEBUG - load_verify_locations cafile='/opt/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem'
+2025-09-19 16:56:58,751 - __main__ - INFO - Recording....
+2025-09-19 16:56:58,791 - audio_recorder - INFO - Recording audio...
+2025-09-19 16:57:06,927 - audio_recorder - INFO - Stopping audio recording...
+2025-09-19 16:57:07,062 - audio_recorder - INFO - Audio saved to abhishek_out.wav
+2025-09-19 16:57:07,062 - __main__ - INFO - Recording completed
+2025-09-19 16:57:07,063 - __main__ - INFO - Transcribing in process...
+2025-09-19 16:57:08,067 - __main__ - INFO - Transcribing completed!
+2025-09-19 16:57:08,067 - __main__ - INFO - Transcribed audio is :  Hello my name is Abhishek and I am doing really good. Quit.
+2025-09-19 16:57:08,068 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': ' Hello my name is Abhishek and I am doing really good. Quit.'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 2046, 'stop': None, 'stream': True, 'temperature': 1, 'top_p': 1}}
+2025-09-19 16:57:08,099 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-09-19 16:57:08,099 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-09-19 16:57:08,161 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x12ec6fc10>
+2025-09-19 16:57:08,161 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x12ce97260> server_hostname='api.groq.com' timeout=5.0
+2025-09-19 16:57:08,203 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x138dac950>
+2025-09-19 16:57:08,204 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-09-19 16:57:08,204 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-09-19 16:57:08,204 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-09-19 16:57:08,204 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-09-19 16:57:08,204 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-09-19 16:57:08,319 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 19 Sep 2025 11:27:08 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-RAY', b'9818bb6c5c67ff6c-BOM'), (b'Cache-Control', b'no-cache'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'999'), (b'x-ratelimit-remaining-tokens', b'11979'), (b'x-ratelimit-reset-requests', b'1m26.4s'), (b'x-ratelimit-reset-tokens', b'105ms'), (b'x-request-id', b'req_01k5gvmqz1fzjvd8kfbrt1dz7w'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=DX.XAJLnYnSwyuy7z4Su_4J2FpXURq8Gs3ZdfUQMvfk-1758281228-1.0.1.1-MSsT1PFkjsAtJOUu0xF.1a8IPHQctARI39R418F3GFltFw7hZdwm4SwGTm41ahTcN.BViWgHk1r0Zb0pg5z9b188jSUmbKICKIHvE_Aj1mQ; path=/; expires=Fri, 19-Sep-25 11:57:08 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-09-19 16:57:08,320 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-19 16:57:08,320 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Fri, 19 Sep 2025 11:27:08 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cf-ray': '9818bb6c5c67ff6c-BOM', 'cache-control': 'no-cache', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '999', 'x-ratelimit-remaining-tokens': '11979', 'x-ratelimit-reset-requests': '1m26.4s', 'x-ratelimit-reset-tokens': '105ms', 'x-request-id': 'req_01k5gvmqz1fzjvd8kfbrt1dz7w', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=DX.XAJLnYnSwyuy7z4Su_4J2FpXURq8Gs3ZdfUQMvfk-1758281228-1.0.1.1-MSsT1PFkjsAtJOUu0xF.1a8IPHQctARI39R418F3GFltFw7hZdwm4SwGTm41ahTcN.BViWgHk1r0Zb0pg5z9b188jSUmbKICKIHvE_Aj1mQ; path=/; expires=Fri, 19-Sep-25 11:57:08 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-09-19 16:57:08,320 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-09-19 16:57:08,449 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-09-19 16:57:08,449 - httpcore.http11 - DEBUG - response_closed.started
+2025-09-19 16:57:08,449 - httpcore.http11 - DEBUG - response_closed.complete
+2025-09-19 16:57:08,452 - audio_recorder - INFO - Recording audio...
+2025-09-19 16:57:16,954 - audio_recorder - INFO - Stopping audio recording...
+2025-09-19 16:57:17,090 - audio_recorder - INFO - Audio saved to abhishek_out.wav
+2025-09-19 16:57:17,091 - __main__ - INFO - Recording completed
+2025-09-19 16:57:17,091 - __main__ - INFO - Transcribing in process...
+2025-09-19 16:57:17,961 - __main__ - INFO - Transcribing completed!
+2025-09-19 16:57:17,961 - __main__ - INFO - Transcribed audio is :  What are you doing today?
+2025-09-19 16:57:17,962 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': ' Hello my name is Abhishek and I am doing really good. Quit.'}, {'system': '', 'role': 'assistant', 'content': 'Hello Abhishek, it\'s nice to meet you. I\'m glad to hear that you\'re doing well. Since you said "quit," I\'ll assume you\'re ending our conversation here. It was brief, but nice chatting with you. Have a great day!'}, {'role': 'user', 'content': ' What are you doing today?'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 2046, 'stop': None, 'stream': True, 'temperature': 1, 'top_p': 1}}
+2025-09-19 16:57:17,962 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-09-19 16:57:17,962 - httpcore.connection - DEBUG - close.started
+2025-09-19 16:57:17,963 - httpcore.connection - DEBUG - close.complete
+2025-09-19 16:57:17,963 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-09-19 16:57:18,001 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x138dcf010>
+2025-09-19 16:57:18,001 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x12ce97260> server_hostname='api.groq.com' timeout=5.0
+2025-09-19 16:57:18,042 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x138dce1d0>
+2025-09-19 16:57:18,043 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-09-19 16:57:18,043 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-09-19 16:57:18,043 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-09-19 16:57:18,043 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-09-19 16:57:18,043 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-09-19 16:57:18,114 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Fri, 19 Sep 2025 11:27:18 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'174'), (b'Connection', b'keep-alive'), (b'CF-RAY', b'9818bba9dabd4278-BOM'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-request-id', b'req_01k5gvn1k2fpbtzjprf8371zmp'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-09-19 16:57:18,114 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-19 16:57:18,114 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "400 Bad Request" Headers({'date': 'Fri, 19 Sep 2025 11:27:18 GMT', 'content-type': 'application/json', 'content-length': '174', 'connection': 'keep-alive', 'cf-ray': '9818bba9dabd4278-BOM', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-request-id': 'req_01k5gvn1k2fpbtzjprf8371zmp', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'server': 'cloudflare', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-09-19 16:57:18,114 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/groq/_base_client.py", line 997, in _request
+    response.raise_for_status()
+  File "/opt/anaconda3/lib/python3.11/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2025-09-19 16:57:18,115 - groq._base_client - DEBUG - Not retrying
+2025-09-19 16:57:18,116 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-09-19 16:57:18,116 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-09-19 16:57:18,116 - httpcore.http11 - DEBUG - response_closed.started
+2025-09-19 16:57:18,116 - httpcore.http11 - DEBUG - response_closed.complete
+2025-09-19 16:57:18,116 - groq._base_client - DEBUG - Re-raising status error
+2025-09-19 16:57:18,178 - httpcore.connection - DEBUG - close.started
+2025-09-19 16:57:18,178 - httpcore.connection - DEBUG - close.complete
