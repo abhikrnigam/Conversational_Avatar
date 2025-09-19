@@ -39,7 +39,7 @@ logger.info("Audio recording successful! ")
 
 def transcriber():
     model = whisper.load_model("base")
-    audio_file = "abhishek_out.mp3"
+    audio_file = "abhishek_out.wav"
     result = model.transcribe(audio_file)
     print(result["text"])
 
