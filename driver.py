@@ -28,8 +28,8 @@ def main():
 
             # Step 3: Chat
             print("🤖 Bot:", end=" ")
-            #response = chat_client.chat(text)
-            #print(f"Response: {response}")
+            response = chat_client.chat(text)
+            print(f"Response: {response}")
 
         except KeyboardInterrupt:
             print("Recording stopped by user, restarting loop...")
