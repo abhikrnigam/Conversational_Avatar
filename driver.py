@@ -19,24 +19,20 @@ def main():
 
             # Step 2: Transcribe
             print("Transcribing...")
-            logger.info("Transcribing in process...")
             text = transcribe_audio(audio_file)
-            logger.info("Transcribing completed!")
-            logger.info(f"Transcribed audio is : {text}")
             print(f"You (transcribed): {text}")
 
             if text.strip().lower() == "quit":
                 print("Chat closed")
                 break
 
+            # Step 3: Chat
             print("🤖 Bot:", end=" ")
-            response = chat_client.chat(text)
-            print(f"Response from the chat engine is : {response}")
-
+            #response = chat_client.chat(text)
+            #print(f"Response: {response}")
 
         except KeyboardInterrupt:
-            print("Chat closed by keyboard interrupt")
-            break
-
+            print("Recording stopped by user, restarting loop...")
+            continue  # go back to recording
 if __name__ == "__main__":
     main()
