@@ -2,10 +2,11 @@ import logging
 from audio_recorder import record_audio
 from audio_transcriber import transcribe_audio
 from chat_engine import ChatClient
-from tts_engine import synthesize_and_play
+from tts_engine_resemble import synthesize_and_play
 
 logging.basicConfig(level=logging.DEBUG, filename="driver_logger.log")
 logger = logging.getLogger(__name__)
+
 
 def main():
     chat_client = ChatClient()
@@ -14,11 +15,11 @@ def main():
 
     while True:
         try:
-            # Recording Audio
+            # Step 1: Record
             audio_file = record_audio("abhishek_out.wav")
             logger.info("Recording completed")
 
-            # Transcription
+            # Step 2: Transcribe
             print("Transcribing...")
             text = transcribe_audio(audio_file)
             print(f"You (transcribed): {text}")
@@ -27,18 +28,19 @@ def main():
                 print("Chat closed")
                 break
 
-            # Response from chat engine
+            # Step 3: Chat
             print("🤖 Bot:", end=" ")
             response = chat_client.chat(text)
             print(f"Response: {response}")
 
-            # Gcp TTS
+            # Step 4: TTS (Resemble AI)
             print("🔊 Playing bot response...")
             synthesize_and_play(response)
 
         except KeyboardInterrupt:
             print("Recording stopped by user, restarting loop...")
             continue
+
 
 if __name__ == "__main__":
     main()
