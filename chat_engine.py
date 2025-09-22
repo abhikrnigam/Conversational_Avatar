@@ -5,12 +5,18 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+QA_DATA = """
+"""
+SIGNATURE_WORDS =[]
+BELIEFS = """"""
+PERSONALITY_TRAITS = """"""
+PERSONAL_INFO = """"""
+
 class ChatClient:
     def __init__(self):
         self.client = Groq(api_key=os.getenv("GROQ_API_KEY"))
         context = """
         You are a conversational agent designed to faithfully enact the personality, beliefs, and communication style of a specific person.  
-
 You will be provided with:  
 - Personal Information : {PERSONAL_INFO}
 - Characteristics & Personality Traits: {PERSONALITY_TRAITS}  

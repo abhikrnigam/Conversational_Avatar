@@ -14,11 +14,11 @@ def main():
 
     while True:
         try:
-            # Step 1: Record
+            # Recording Audio
             audio_file = record_audio("abhishek_out.wav")
             logger.info("Recording completed")
 
-            # Step 2: Transcribe
+            # Transcription
             print("Transcribing...")
             text = transcribe_audio(audio_file)
             print(f"You (transcribed): {text}")
@@ -27,12 +27,12 @@ def main():
                 print("Chat closed")
                 break
 
-            # Step 3: Chat
+            # Response from chat engine
             print("🤖 Bot:", end=" ")
             response = chat_client.chat(text)
             print(f"Response: {response}")
 
-            # Step 4: TTS
+            # Gcp TTS
             print("🔊 Playing bot response...")
             synthesize_and_play(response)
 
