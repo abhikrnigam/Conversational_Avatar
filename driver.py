@@ -2,15 +2,16 @@ import logging
 from audio_recorder import record_audio
 from audio_transcriber import transcribe_audio
 from chat_engine import ChatClient
+from tts_engine import synthesize_and_play
 
 logging.basicConfig(level=logging.DEBUG, filename="driver_logger.log")
-
 logger = logging.getLogger(__name__)
 
 def main():
     chat_client = ChatClient()
-    logger.info("Recording....")
+    logger.info("Recording started.")
     print("Speak into the mic. Press CTRL+C to stop recording.")
+
     while True:
         try:
             # Step 1: Record
@@ -31,8 +32,13 @@ def main():
             response = chat_client.chat(text)
             print(f"Response: {response}")
 
+            # Step 4: TTS
+            print("🔊 Playing bot response...")
+            synthesize_and_play(response)
+
         except KeyboardInterrupt:
             print("Recording stopped by user, restarting loop...")
-            continue  # go back to recording
+            continue
+
 if __name__ == "__main__":
     main()
