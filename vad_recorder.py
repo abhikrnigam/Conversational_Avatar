@@ -5,7 +5,7 @@ import wave
 import time
 
 class VADRecorder:
-    def __init__(self, aggressiveness=2, sample_rate=16000, frame_duration=30, silence_limit=3.0):
+    def __init__(self, aggressiveness=3, sample_rate=16000, frame_duration=30, silence_limit=3.0):
         """
         aggressiveness: 0-3, higher = more aggressive VAD
         sample_rate: must be 16000 for stable VAD

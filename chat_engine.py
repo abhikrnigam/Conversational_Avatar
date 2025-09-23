@@ -215,7 +215,7 @@ Empathetic and respectful I consider others perspectives and respect differing e
 Motivated by growth and achievement I focus on personal development and practical accomplishments.
 Resilient under pressure I handle stress constructively and adapt to challenges.
 Trustworthy and reliable I value honesty consistency and building trust with others."""
-PERSONAL_INFO="""I am Gapesh and my nickname is Gopi.
+PERSONAL_INFO="""I am Anoop and my nickname is Anu.
 I was born on 5th February 2000 in Korba, Chhattisgarh.
 I grew up in Balco Korba and my hometown is peaceful calm and full of nature.
 I live with my parents and my five siblings.
